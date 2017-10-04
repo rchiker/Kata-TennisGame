@@ -18,6 +18,10 @@ public interface Joueur {
 
 	String getPseudo();
 
+	void resetScore();
+
+	Integer getScore();
+
 
 }
 

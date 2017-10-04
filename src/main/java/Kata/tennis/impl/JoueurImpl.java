@@ -53,5 +53,17 @@ public class JoueurImpl implements Joueur {
 		return sets;
 	}
 
+	@Override
+	public void resetScore() {
+		points = 0;
+	}
+
+	@Override
+	public Integer getScore() {
+		if (points <= 3)
+			return SCORE[points];
+		return SCORE[3];
+	}
+
 
 }

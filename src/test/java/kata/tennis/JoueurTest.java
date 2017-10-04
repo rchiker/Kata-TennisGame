@@ -30,6 +30,31 @@ public class JoueurTest {
 	public void getPseudoTest() {
 		assertTrue(joueur1.getPseudo().equals("RCH"));
 	}
+	
+	@Test
+	public void resetScoreTest() {
+		joueur1.gagnerPoint();
+		joueur1.gagnerPoint();
+		joueur1.gagnerPoint();
+		assertEquals(3, joueur1.getPoints());
+		joueur1.resetScore();
+		assertEquals(0, joueur1.getPoints());
+	}
+
+	@Test
+	public void getScoreTest() {
+		assertEquals(0, joueur1.getScore().intValue());
+		joueur1.gagnerPoint();
+		assertEquals(15, joueur1.getScore().intValue());
+		joueur1.gagnerPoint();
+		assertEquals(30, joueur1.getScore().intValue());
+		joueur1.gagnerPoint();
+		assertEquals(40, joueur1.getScore().intValue());
+		joueur1.gagnerPoint();
+		assertEquals(40, joueur1.getScore().intValue());
+		joueur1.gagnerPoint();
+		assertEquals(40, joueur1.getScore().intValue());
+	}
 
 
 }
