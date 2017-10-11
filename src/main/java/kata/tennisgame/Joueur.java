@@ -1,8 +1,6 @@
-package Kata_Tennis.tennisGameImpl;
+package kata.tennisgame;
 
-import Kata_Tennis.tennisGame.Joueur;
-
-public class JoueurImpl implements Joueur {
+public class Joueur {
 	private Integer				points	= 0;
 	private Integer				jeu	= 0;
 	private Integer				set	= 0;
@@ -11,7 +9,7 @@ public class JoueurImpl implements Joueur {
 	private static final int[]	SCORE	= { 0, 15, 30, 40 };
 	
 
-	public JoueurImpl(String pseudo) {
+	public Joueur(String pseudo) {
 		super();		
 		this.pseudo = pseudo;
 	}

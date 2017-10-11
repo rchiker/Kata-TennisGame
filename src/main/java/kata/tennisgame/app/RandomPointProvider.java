@@ -1,4 +1,4 @@
-package Kata_Tennis.tennisGameApp;
+package kata.tennisgame.app;
 
 import java.util.Random;
 
