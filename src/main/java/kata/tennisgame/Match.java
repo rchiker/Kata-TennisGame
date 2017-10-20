@@ -33,7 +33,7 @@ public class Match {
 		// Un point de plus pour le joueur1
 		else {
 			joueur.gagnerPoint();
-			playerHasWonJeu(joueur);
+			playerHasWonGame(joueur);
 		}
 	}
 	
@@ -53,7 +53,7 @@ public class Match {
 	 * tester si le joueur1 a bien gagné son jeu
 	 * @param joueur
 	 */
-	private void playerHasWonJeu(Joueur joueur) {
+	private void playerHasWonGame(Joueur joueur) {
 		
 		if(joueur.getPoints()>3 && Math.abs(joueur1.getPoints()-joueur2.getPoints())>1) {
 			joueur.gagnerJeu();
