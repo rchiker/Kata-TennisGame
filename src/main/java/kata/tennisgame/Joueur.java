@@ -1,75 +1,23 @@
 package kata.tennisgame;
 
-public class Joueur {
-	private Integer				points	= 0;
-	private Integer				jeu	= 0;
-	private Integer				set	= 0;
-	private String				pseudo;
-	private Integer 			tieBreakPoints = 0;
-	private static final int[]	SCORE	= { 0, 15, 30, 40 };
+/**
+ * @author Chiker
+ *
+ */
+public interface Joueur {
+
+	public void gagnerPoint();
+
+	public void resetScore();
+
+	public Integer getScore();
+
+	public void gagnerJeu();
+
+	public void gagnerSet() ;
 	
+	public void gagnerTieBreakPoint() ;
 
-	public Joueur(String pseudo) {
-		super();		
-		this.pseudo = pseudo;
-	}
+	public Integer getTieBreakPoints();
 
-	public String getPseudo() {
-		return pseudo;
-	}
-
-	public void gagnerPoint() {
-		points += 1;
-	}
-
-	public Integer getPoints() {
-		return points;
-	}
-
-	public void resetScore() {
-		points = 0;
-	}
-
-	public Integer getScore() {
-		if (points <= 3)
-			return SCORE[points];
-		return SCORE[3];
-	}
-
-	public void gagnerJeu() {
-		jeu++;
-	}
-	
-	public Integer getJeu() {
-		return jeu;
-	}
-
-	public void setJeu(Integer jeu) {
-		this.jeu = jeu;
-	}
-
-	public void gagnerSet() {
-		set++;		
-	}
-
-	public Integer getSet() {
-		return set;
-	}
-
-	public void setSet(Integer set) {
-		this.set = set;
-	}
-
-	public void setPoints(Integer points) {
-		this.points = points;
-	}
-	
-	public void gagnerTieBreakPoint() {
-		tieBreakPoints += 1;
-		
-	}
-
-	public Integer getTieBreakPoints() {
-		return tieBreakPoints;
-	}
 }

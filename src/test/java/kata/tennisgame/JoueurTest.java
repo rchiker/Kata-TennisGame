@@ -7,15 +7,17 @@ import java.util.stream.IntStream;
 import org.junit.Before;
 import org.junit.Test;
 
+import kata.tennisgame.impl.JoueurImpl;
+
 
 public class JoueurTest {
-	Joueur joueur1;
-	Joueur joueur2;
+	JoueurImpl joueur1;
+	JoueurImpl joueur2;
 
 	@Before
 	public void init() {
-		joueur1 = new Joueur("RCH");
-		joueur2 = new Joueur("CGI");
+		joueur1 = new JoueurImpl("RCH");
+		joueur2 = new JoueurImpl("CGI");
 	}
 	
 

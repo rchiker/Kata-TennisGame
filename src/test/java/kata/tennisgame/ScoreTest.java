@@ -7,12 +7,14 @@ import java.util.stream.IntStream;
 import org.junit.Before;
 import org.junit.Test;
 
+import kata.tennisgame.impl.ScoreFrameImpl;
+
 public class ScoreTest {
-	ScoreFrame scoreFrame ;
+	ScoreFrameImpl scoreFrame ;
 
 	@Before
 	public void init() {
-		scoreFrame = new ScoreFrame();
+		scoreFrame = new ScoreFrameImpl();
 	}
 	
 	@Test

@@ -1,6 +1,6 @@
 package kata.tennisgame.app;
 
-import kata.tennisgame.ScoreFrame;
+import kata.tennisgame.impl.ScoreFrameImpl;
 
 public class TennisApp {
 	
@@ -11,7 +11,7 @@ public class TennisApp {
 	}
 	
 	public void run() {
-		ScoreFrame score = new ScoreFrame();
+		ScoreFrameImpl score = new ScoreFrameImpl();
 		while(!score.getGame().endGame()) {
 			score.getGame().play(pointProvider.providePoint());
 			score.showScore();

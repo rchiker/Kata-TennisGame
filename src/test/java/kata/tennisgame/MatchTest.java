@@ -7,14 +7,16 @@ import java.util.stream.IntStream;
 import org.junit.Before;
 import org.junit.Test;
 
+import kata.tennisgame.impl.MatchImpl;
+
 
 public class MatchTest {
-	Match tennisGame;
+	MatchImpl tennisGame;
 
 
 	@Before
 	public void init() {
-		tennisGame = new Match("RCH", "CGI");
+		tennisGame = new MatchImpl("RCH", "CGI");
 	}
 
 	@Test
